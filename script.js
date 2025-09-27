@@ -175,9 +175,70 @@
 
 // create an array of random numbers and make it double of each
 
-var num=[5,10,15,20]
-var double=0
-for( var i=0; i<num.length; i++){
+// var num=[5,10,15,20]
+// var double=0
+// for( var i=0; i<num.length; i++){
 
-console.log(num[i]*2)
-}``
+// console.log(num[i]*2)
+// }
+
+// 27-sep-2025 class work
+// Use array.splice() to remove the element at index 2 and return the update array
+// var num=[10,20,30,40,50,60]
+// num.splice(2,1);
+// console.log(num)
+
+// insert a number 4 at index 3 by array.splice method
+// var num=[1,2,3,5]
+// num.splice(3,0,4)
+// console.log(num)
+
+// Give an array ['a','b','c','d'] and replace the element 'b' with 'x' using array .splice(), and return the updated array
+// var arr=['a','b','c','d']
+// arr.splice(1,1,'x')
+// console.log(arr)
+
+// give an array [100, 200, 300, 400, 500] and copy first 4 element from an array1 and return in updated array 
+// var num=[100, 200, 300, 400, 500]
+// var num2=num.slice(0,4)
+// console.log(num2)
+
+// give an array [10,20,30,40,50] and  
+// var num=[10,20,30,40,50]
+// var num2=num.slice(2,5)
+// console.log(num2)
+
+// give an array [10,20,30,40,50] in a variable and use (array.splice) method and return 10,50 in updated array
+var num=[10,20,30,40,50]
+num.splice(1,3)
+console.log (num)
+
+// Give two array num1=[1,2,3] and num2=[4,5,6] and use array.slice() method amd returm both array into one array
+// var num1=[1,2,3]
+// var num2=[4,5,6]
+// var num3=num1.slice(0,3)+","+num2.slice(0,3)
+// console.log(num3)
+
+                                          //  There is two method to solve this problem
+
+// Give two array num1=[1,2,3] and num2=[4,5,6] and use array.slice() method amd returm both array into one array
+// var num1=[1,2,3]
+// var num2=[4,5,6]
+// var num3=(num1.slice(0,3)).concat(num2.slice(0,3))
+// console.log(num3)
+
+// Given an arrray num=[1,2,3,4], use array.slice() to create a deep copy of the array and modify the copy without affecting the original array. add the number 5 at the end of the new array 
+// var num=[1,2,3,4]
+// num.slice(0,4)
+// var num2=num.splice(4,0,5)
+// console.log(num)
+
+// Given an array num=[10,20,30,40,50] by using num.splice method remove first 2 numbers
+// var num=[10,20,30,40,50]
+// num.splice(0,2)
+// console.log(num)
+
+// Given an array num=[10,20,30,40,50], shuffle the array randomly using array .splice(). return the shuffled array
+// var num=[10,20,30,40,50]
+// num.splice(0,5,20,40,50,10,30)
+// console.log(num)
