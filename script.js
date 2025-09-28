@@ -209,9 +209,9 @@
 // console.log(num2)
 
 // give an array [10,20,30,40,50] in a variable and use (array.splice) method and return 10,50 in updated array
-var num=[10,20,30,40,50]
-num.splice(1,3)
-console.log (num)
+// var num=[10,20,30,40,50]
+// num.splice(1,3)
+// console.log (num)
 
 // Give two array num1=[1,2,3] and num2=[4,5,6] and use array.slice() method amd returm both array into one array
 // var num1=[1,2,3]
@@ -219,7 +219,7 @@ console.log (num)
 // var num3=num1.slice(0,3)+","+num2.slice(0,3)
 // console.log(num3)
 
-                                          //  There is two method to solve this problem
+//  There is two method to solve this problem
 
 // Give two array num1=[1,2,3] and num2=[4,5,6] and use array.slice() method amd returm both array into one array
 // var num1=[1,2,3]
@@ -242,3 +242,93 @@ console.log (num)
 // var num=[10,20,30,40,50]
 // num.splice(0,5,20,40,50,10,30)
 // console.log(num)
+
+// for Loops and nested for loops paractise
+
+// **
+// **
+// var row = 2;
+// var column = 2;
+// for (var i = 0; i < row; i++) {
+//     var star = "";
+//     for (var j = 0; j < column; j++) {
+//         star += "*"
+//     }
+//     console.log(star)
+// }
+
+// 123
+// 123
+// 123
+// var row=3;
+// var column=3;
+// for(var i=0; i<row; i++){
+//    var num=""
+// for(var j=1; j<=column; j++){
+// num+=j
+// }
+// console.log(num)
+// }
+
+
+// 123
+// 456
+// 789
+// var row=3;
+// var column=3;
+// var num=1;
+// for(var i=0; i<row; i++){
+//    var star=""
+// for(var j=1; j<=column; j++){
+// star+=num
+// num++     
+// }
+// console.log(star)
+// }
+
+// Console 3 6 9
+        // 12 15 18
+        // 21 24 27  
+// var row=3;
+// var column=3;
+// var num=1;
+// for(var i=0; i<row; i++){
+//    var star=""
+// for(var j=1; j<=column; j++){
+// star+=num*3 + " "
+// num++     
+// }
+// console.log(star)
+// }
+
+// Console 3 6 9
+        // 12 15 18
+        // 21 24 27
+        // 30 33 36
+// var row=4;
+// var column=3;
+// var num=1;
+// for(var i=0; i<row; i++){
+//    var star=""
+// for(var j=1; j<=column; j++){
+//    star+=num*3 + " "
+//    num++
+// }
+// console.log(star)
+// }
+
+// Console   *
+           //**   
+           //***
+           //****
+var row=4;
+var column=3;
+var num=1;
+for(var i=0; i<row; i++){
+   var star="*"
+for(var j=3; j<=column; j++){
+   star+=star
+   num++
+}
+console.log(star)
+}
