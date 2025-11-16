@@ -287,8 +287,8 @@
 // }
 
 // Console 3 6 9
-        // 12 15 18
-        // 21 24 27  
+// 12 15 18
+// 21 24 27  
 // var row=3;
 // var column=3;
 // var num=1;
@@ -302,9 +302,9 @@
 // }
 
 // Console 3 6 9
-        // 12 15 18
-        // 21 24 27
-        // 30 33 36
+// 12 15 18
+// 21 24 27
+// 30 33 36
 // var row=4;
 // var column=3;
 // var num=1;
@@ -318,17 +318,228 @@
 // }
 
 // Console   *
-           //**   
-           //***
-           //****
-var row=4;
-var column=3;
-var num=1;
-for(var i=0; i<row; i++){
-   var star="*"
-for(var j=3; j<=column; j++){
-   star+=star
-   num++
+//**   
+//***
+//****
+// var row=4;
+// var column=3;
+// var num=1;
+// for(var i=0; i<row; i++){
+//    var star="*"
+// for(var j=3; j<=column; j++){
+//    star+=star
+//    num++
+// }
+// console.log(star)
+// }
+
+
+
+
+// Mark sheet 
+
+
+
+// for (var i = 0; i < 5; i++) {
+//         for (var j = 0; j <= i; j++) {
+//                 document.writeln("*");
+//         }
+//         document.writeln("<br/>")
+// }
+
+
+// var countNumber=0;
+// const countAdd=()=>{
+//         countNumber+1
+//         console.log(countNumber)
+// }
+// var countNumber=0;
+// const countMinus=()=>{
+//         countNumber-1
+//         console.log(countNumber)
+// }
+
+
+// function getInput() {
+//         var num1 = +prompt("Enter The Number 1 ")
+//         var operator = +prompt("Enter The operator For Operation ")
+//         var num2 = +prompt("Enter The Number 3 ")
+//         var checkNum = checkInput(num1, num2)
+//         if (checkNum == true) {
+//                 var result = operatorCheck(num1, num2, operator)
+//         }
+
+
+
+//         else {
+//                 alert("Please Enter only number")
+//         }
+// }
+// function checkInput(a, b) {
+//         if (isNaN(a) || isNaN(b) || a == "" || b == "") {
+//                 return false
+//         }
+//         else {
+//                 return true
+//         }
+
+// }
+// function operatorCheck(a, b, operator) {
+//         if{ operator=== "+")
+//                 return add(a, b)
+// }else if (operator === "-") {
+//         return sub(a, b)
+// } else if (operator === "*") {
+//         return multiply(a, b)
+// } else if (operator === "/") {
+//         return division(a, b)
+// } else {
+//         return null
+// }
+// }
+// function add(a, b) {
+//         return a + b;
+// }
+// function sub(a, b) {
+//         return a - b;
+// }
+// function multiply(a, b) {
+//         return a * b;
+// }
+// function division(a, b) {
+//         return a / b;
+// }
+
+// getInput();
+
+
+// function getInput() {
+//   var numb1 = prompt("Enter Number 1");
+//   var op = prompt("Enter Operator ");
+//   var numb2 = prompt("Enter Number 2 ");
+//   var checkNumb = checkInput(numb1, numb2); //check numbers input data sei 
+//   if (checkNumb == true) {
+//    var result = OperatorCheck(Number(numb1),Number(numb2),op) //operation
+//    if(result!=null){
+//     document.writeln("Number 1 : ",numb1)
+//     document.writeln("Number 2 : ",numb2)
+//     document.writeln(`Number 1Result : ${numb1}  ${op} ${numb2} : ${result}`)
+
+
+//    }
+//    else{
+//     alert("enter correct operator")
+//    }
+
+
+//   } else {
+//     alert("Please enter only number");
+//   }
+// }
+
+// function checkInput(a, b) {
+//   if (isNaN(a) || isNaN(b) || a == "" || b == "") {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// function OperatorCheck(a, b, op) {
+//   if (op == "+") {
+//     return Add(a, b);
+//   } else if (op == "-") {
+//     return Sub(a, b);
+//   } else if (op == "*") {
+//     return Multiply(a, b);
+//   } else if (op == "/") {
+//     return Div(a, b);
+//   } else {
+//     return null;
+//   }
+// }
+
+// function Add(a, b) {
+//   return a + b;
+// }
+// function Sub(a, b) {
+//   return a - b;
+// }
+// function Multiply(a, b) {
+//   return a * b;
+// }
+// function Div(a, b) {
+//   return a / b;
+// }
+
+// getInput();
+
+
+//Make a Mcqs test by object and array 
+
+var mcqsQuestions = [
+    {
+        Question: "Is Java Script Easy Or Difficult ?",
+        options: ["Yes", "no", "Maybe", "Very Difficult"],
+        answer: "b",
+    },
+    {
+        Question: "Is Html Easy or Difficult ?",
+        options: ["Yes", "no", "Maybe", "Very Difficult"],
+        answer: "a",
+    },
+    {
+        Question: ["Is Css easy Or Difficult"],
+        options: ["Yes", "no", "Maybe", "Very Difficult"],
+        answer: "b",
+    }
+];
+var score = 0;
+
+function showQuiz() {
+    var countScore = 100 / mcqsQuestions.length;    // Count Dynamicaaly none Question Score
+    for (var i = 0; i < mcqsQuestions.length; i++) {
+        var userInput = prompt(`
+            Question ${i + 1}:${mcqsQuestions[i].Question}
+            a) ${mcqsQuestions[i].options[0]}
+            b) ${mcqsQuestions[i].options[1]}
+            c) ${mcqsQuestions[i].options[2]}
+            d) ${mcqsQuestions[i].options[3]}
+            `)
+        if (userInput.toLowerCase() == mcqsQuestions[i].answer) {
+            score = score + countScore
+        }
+    }
+    alert("Your Total Score Is " + score.toFixed(0))
 }
-console.log(star)
+showQuiz();
+
+
+function showOutput() {
+    for (var i = 0; i < mcqsQuestions.length; i++) {
+
+        document.writeln(`
+          
+<div class="card" style="width:50%;margin:auto;margin-top:20px">
+
+  <div class="card-body">
+    <h5 class="card-title">Question No : ${i + 1}) ${mcqsQuestions[i].Question
+            }</h5>
+    <p class="card-text">
+     <ul>
+      <li>${mcqsQuestions[i].options[0]}</li>
+      <li>${mcqsQuestions[i].options[1]}</li>
+      <li>${mcqsQuestions[i].options[2]}</li>
+      <li>${mcqsQuestions[i].options[3]}</li>
+    </ul>
+     <h3>Correct Option : ${mcqsQuestions[i].answer}</h3>
+    <h3>your Option : ${answerOptions[i]}</h3>
+    </p>
+
+  </div>
+</div>
+     `);
+    }
 }
+
+showQuiz();
