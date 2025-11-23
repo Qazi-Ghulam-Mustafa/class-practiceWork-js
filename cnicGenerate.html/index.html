@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cnic</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+
+        div {
+            margin-top: 50px;
+            border: 1px solid black;
+            padding: 30px;
+            border-radius: 20px;
+            background-color: rgb(10, 53, 38);
+        }
+
+        button {
+            display: block;
+            margin: auto;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 1px transparent;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        input{
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="userName"><br>
+        <b id="nameError"></b>
+        <br><br>
+        <input type="text" id="email"><br>
+        <b id="emailError"></b>
+        <br><br>
+        <input type="number" id="age"><br>
+        <b id="ageError"></b>
+        <br><br>
+        <input type="text" id="password"><br>
+        <b id="passwordError"></b>
+        <br><br>
+        <input type="number" id="contactNum"><br>
+        <b id="contactNumError"></b>
+        <br><br>
+        <input type="number" id="cnic" readonly placeholder="Fill data or Generate CNIC">
+        <br><br>
+
+        <button onclick="submit()">Submit</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

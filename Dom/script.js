@@ -12,12 +12,13 @@
 // }
 
 
-var email= document.getElementById("email");
-console.log(email);
+// var email= document.getElementById("email");
+// console.log(email);
 
 
-function submitData(){
-    if(email.value=="" ){
-        alert("Please Enter Your Email Address")
-    }
-}
+// function submitData(){
+//     if(email.value=="" ){
+//         alert("Please Enter Your Email Address")
+//     }
+// }
+
