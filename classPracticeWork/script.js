@@ -364,66 +364,66 @@
 
 
 
-function getInput() {
-  var numb1 = prompt("Enter Number 1");
-  var op = prompt("Enter Operator ");
-  var numb2 = prompt("Enter Number 2 ");
-  var checkNumb = checkInput(numb1, numb2); //check numbers input data sei 
-  if (checkNumb == true) {
-   var result = OperatorCheck(Number(numb1),Number(numb2),op) //operation
-   if(result!=null){
-    document.writeln("Number 1 : ",numb1)
-    document.writeln("Number 2 : ",numb2)
-    document.writeln(`Number 1Result : ${numb1}  ${op} ${numb2} : ${result}`)
+// function getInput() {
+//   var numb1 = prompt("Enter Number 1");
+//   var op = prompt("Enter Operator ");
+//   var numb2 = prompt("Enter Number 2 ");
+//   var checkNumb = checkInput(numb1, numb2); //check numbers input data sei 
+//   if (checkNumb == true) {
+//    var result = OperatorCheck(Number(numb1),Number(numb2),op) //operation
+//    if(result!=null){
+//     document.writeln("Number 1 : ",numb1)
+//     document.writeln("Number 2 : ",numb2)
+//     document.writeln(`Number 1Result : ${numb1}  ${op} ${numb2} : ${result}`)
 
 
-   }
-   else{
-    alert("enter correct operator")
-   }
+//    }
+//    else{
+//     alert("enter correct operator")
+//    }
 
 
-  } else {
-    alert("Please enter only number");
-  }
-}
+//   } else {
+//     alert("Please enter only number");
+//   }
+// }
 
-function checkInput(a, b) {
-  if (isNaN(a) || isNaN(b) || a == "" || b == "") {
-    return false;
-  } else {
-    return true;
-  }
-}
+// function checkInput(a, b) {
+//   if (isNaN(a) || isNaN(b) || a == "" || b == "") {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
 
-function OperatorCheck(a, b, op) {
-  if (op == "+") {
-    return Add(a, b);
-  } else if (op == "-") {
-    return Sub(a, b);
-  } else if (op == "*") {
-    return Multiply(a, b);
-  } else if (op == "/") {
-    return Div(a, b);
-  } else {
-    return null;
-  }
-}
+// function OperatorCheck(a, b, op) {
+//   if (op == "+") {
+//     return Add(a, b);
+//   } else if (op == "-") {
+//     return Sub(a, b);
+//   } else if (op == "*") {
+//     return Multiply(a, b);
+//   } else if (op == "/") {
+//     return Div(a, b);
+//   } else {
+//     return null;
+//   }
+// }
 
-function Add(a, b) {
-  return a + b;
-}
-function Sub(a, b) {
-  return a - b;
-}
-function Multiply(a, b) {
-  return a * b;
-}
-function Div(a, b) {
-  return a / b;
-}
+// function Add(a, b) {
+//   return a + b;
+// }
+// function Sub(a, b) {
+//   return a - b;
+// }
+// function Multiply(a, b) {
+//   return a * b;
+// }
+// function Div(a, b) {
+//   return a / b;
+// }
 
-getInput();
+// getInput();
 
 
 //Make a Mcqs test by object and array 
@@ -470,7 +470,7 @@ getInput();
 //     for (var i = 0; i < mcqsQuestions.length; i++) {
 
 //         document.writeln(`
-          
+
 // <div class="card" style="width:50%;margin:auto;margin-top:20px">
 
 //   <div class="card-body">
@@ -516,3 +516,67 @@ getInput();
 // harry.submit();
 // Mustafa.submit();
 // Mustafa.cancel();
+
+// getInput()
+
+// function getInput() {
+//   var num1 = +prompt("Enter Number 1");
+//   var operator = +prompt("Ente Operator For operation");
+//   var num2 = +prompt("Enter Number 2");
+
+//   var checkNumber = checkData(num1, num2);
+//   if (checkNumber == true) {
+//     var reult = checkOperator(num1, num2, operator);
+//     if(reult!=null)
+//     document.writeln("Number 1 Is :" + num1)
+//     document.writeln("Number 2 Is :" + num2)
+//     document.writeln("result of ", num1 + " " + operator + " " + num2 + " is equal : " + reult)
+//   }
+// }
+
+// function checkData(a, b) {
+//   if (isNaN(a) || isNaN(b)) {
+//     alert("Please Enter Only Number");
+//     return false;
+//   }
+//   else {
+//     return true;
+//   }
+// }
+
+// function checkOperator(a, b, op) {
+//   if (op == "+") {
+//     return Addition(a, b)
+//   }
+//   else if (op == "-") {
+//     return Substraction(a, b)
+//   }
+//   else if (op == "*") {
+//     return Multiplication(a, b)
+//   }
+//   else if (op == "/") {
+//     return Division(a, b)
+//   }
+//   else {
+//     alert("PLease Enter Correct Operator");
+//     return null
+//   }
+// }
+
+// function Addition(a, b) {
+//   return a + b;
+// }
+
+// function Substraction(a, b) {
+//   return a - b;
+// }
+
+// function Multiplication(a, b) {
+//   return a * b;
+// }
+
+// function Division(a, b) {
+//   return a / b;
+// }
+
+
