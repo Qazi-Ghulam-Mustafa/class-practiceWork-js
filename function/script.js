@@ -116,14 +116,15 @@
 
 
 // New 
-function getInput() {
-    var num1 = +prompt("Enter first number:");
-    var num2 = +prompt("Enter second number:");
-    var num3 = +prompt("Enter third number:");
-    document.writeln("You entered: " + num1 + ", " + num2 + ", " + num3 + "<br>");
-    return (num1 + num2 - num3);
+// function getInput() {
+//     var num1 = +prompt("Enter first number:");
+//     var num2 = +prompt("Enter second number:");
+//     var num3 = +prompt("Enter third number:");
+//     document.writeln("You entered: " + num1 + ", " + num2 + ", " + num3 + "<br>");
+//     return (num1 + num2 - num3);
 
-}
+// }
 
-var result = getInput()
-document.writeln("The result is: " + result);
+// var result = getInput()
+// document.writeln("The result is: " + result);
+
