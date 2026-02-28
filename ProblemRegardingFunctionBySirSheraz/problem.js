@@ -11,3 +11,5 @@ function input(){
         console.log(numInput.value);
     }
 }
+
+
